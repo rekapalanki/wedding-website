@@ -1,0 +1,93 @@
+/* ===== GENERAL STYLES ===== */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    min-height: 100%;
+    position: relative;
+}
+
+body {
+    margin-bottom: 120px; /* Equals the height of the footer +30px so the content doesnt flow below it */
+    line-height: 1.5;
+    font-family: Mulish, Calibri;
+    font-size: 1.125rem;
+    text-align: center;
+    color: #444349;
+}
+
+/* ===== HEADER STYLES ===== */
+
+.fullpage-header {
+    width: 100vw;
+    height: 100vh;
+    background: #676767 url(https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-cover.jpg) no-repeat 70% 50%;
+    background-size: cover;
+    display: table;
+}
+
+.wrapper {
+    display: table-cell;
+    vertical-align: middle;
+    transform: translate(0, 100px);
+}
+
+#header-background {
+    background-color: hsla(100,0%,0%,.6);
+}
+
+/* Headline Styles */
+
+.headline {
+    color: #d2ba87;
+    font-family: "Great Vibes", "Libre Baskerville", Calibri;
+    font-size: 5rem;
+    font-weight: bold;
+    line-height: 1;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+}
+
+/* Tagline Styles */
+
+.tagline, .tag, .time-and-date {
+    display: block;
+    padding: 1rem 0;
+}
+
+.tagline {
+    width: 90vw;
+    margin: 0 auto;
+}
+
+.tag {
+    margin: 0% 5%;
+    border-top: 0.05rem solid rgb(150,150,150);
+    border-bottom: 0.05rem solid rgb(150,150,150);
+    font-size: 1.4rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.time-and-date {
+    font-size: 1.125rem;
+}
+
+/* ===== MAIN CONTENT STYLES ===== */
+
+/* Media styles */
+
+img {
+    max-width: 200px;
+}
+
+/* ===== FOOTER STYLES ===== */
+
+footer {
+    overflow: hidden;
+    position: absolute; 
+    bottom: 0;
+    height: 120px;
+}
