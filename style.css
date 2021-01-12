@@ -18,6 +18,11 @@ body {
     color: #444349;
 }
 
+html, body, header, main { /* Prevent content to flow out of the viewport */
+    overflow-x: hidden;
+    max-width: 100vw;
+}
+
 /* ===== HEADER STYLES ===== */
 
 .fullpage-header {
@@ -29,22 +34,18 @@ body {
 }
 
 .wrapper {
-
     display: table-cell;
     vertical-align: middle;
     transform: translate(0, 100px);
 }
 
 #header-background {
-    
     background-color: hsla(100,0%,0%,.6);
 }
 
 /* Headline Styles */
 
 .headline {
-    width: 95%;
-    margin: auto;
     color: #d2ba87;
     font-family: "Great Vibes", "Libre Baskerville", Calibri;
     font-size: 4.8rem;
@@ -86,7 +87,6 @@ main {
 }
 
 section {
-    width: 95%;
     padding-top: 1rem;
     padding-bottom: 2rem;
 }
@@ -97,7 +97,7 @@ section {
 }
 
 .locations-line {
-    width: 100px;
+    width: 25vw;
     border: 2px solid #444349;
 }
 
@@ -117,6 +117,41 @@ p, ul {
     font-size: 1.25rem;
 }
 
+.articleTagline {
+    font-style: italic;
+}
+
+.times {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    width: 400px;
+    text-align: left;
+}
+
+.question, .answer {
+    text-align: left;
+    margin-left: 1rem;
+}
+
+.question {
+    font-weight: bold;
+}
+
+.qa-line {
+    width: 50vw;
+    border: 2px solid #d2ba87;
+}
+
+.contacts {
+    font-family: "Libre Baskerville", Calibri;
+}
+
+#email {
+    overflow-wrap: break-word; /* Forcing long lines to break */
+    word-wrap: break-word;
+    word-break: break-word;
+}
+
 /* Vertical Rhythm */
 
 h2,h3,h4,h5,h6,hgroup,
@@ -124,6 +159,10 @@ ul,ol,dd,
 p,figure,
 pre,table,fieldset,hr,img {
     margin-bottom: 2rem;
+}
+
+.question {
+    margin-bottom: 0.5rem; /* Correction for Q&A section */
 }
 
 /* Media styles */
@@ -192,4 +231,24 @@ small {
         display: none;
     }
 
+    .times {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .section-wrapper {
+        display: table;
+    }
+
+    .qa {
+        display: table-cell;
+        padding: 0 5%;
+        width: 33%;
+        text-align: left;
+    }
+
+    .question, .answer {
+        margin-left: 0;
+    }
+    
 }
