@@ -2,6 +2,9 @@
 
 * {
     box-sizing: border-box;
+    overflow-wrap: break-word; /* Forcing long lines to break */
+    word-wrap: break-word;
+    word-break: break-word;
 }
 
 html {
@@ -146,12 +149,6 @@ p, ul {
     font-family: "Libre Baskerville", Calibri;
 }
 
-#email {
-    overflow-wrap: break-word; /* Forcing long lines to break */
-    word-wrap: break-word;
-    word-break: break-word;
-}
-
 /* Vertical Rhythm */
 
 h2,h3,h4,h5,h6,hgroup,
@@ -242,7 +239,7 @@ small {
 
     .qa {
         display: table-cell;
-        padding: 0 5%;
+        padding: 0 1.5rem;
         width: 33%;
         text-align: left;
     }
@@ -251,4 +248,21 @@ small {
         margin-left: 0;
     }
     
+    /* CUSTOMIZED SCROLLBAR */
+
+    ::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+    }
+
+    ::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+        border-radius: 5px;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        border-radius: 5px;
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+    }
+
 }
