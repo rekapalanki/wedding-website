@@ -77,6 +77,23 @@ body {
 
 /* ===== MAIN CONTENT STYLES ===== */
 
+main {
+    background: url(https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-background.png) repeat;
+}
+
+section {
+    padding: 1rem 0;
+}
+
+/* Vertical Rhythm */
+
+h2,h3,h4,h5,h6,hgroup,
+ul,ol,dd,
+p,figure,
+pre,table,fieldset,hr,img {
+    margin-bottom: 2rem;
+}
+
 /* Media styles */
 
 img {
@@ -90,4 +107,44 @@ footer {
     position: absolute; 
     bottom: 0;
     height: 120px;
+    width: 100%;
+    padding: 1.7rem 0;
+    text-align: center;
+    background-color: #606060;
+    color: #fff;
+}
+
+#copyright {
+    margin: 0 2%;
+    padding-bottom: 0.9rem;
+}
+
+a {
+    text-decoration: none;
+    color: #bd806e;
+}
+
+a:hover {
+    color: #eda087;
+    transition: color .5s ease-in-out;
+}
+
+strong {
+    font-weight: bold;
+}
+
+small {
+    font-size: .9rem;
+}
+
+@media (min-width: 800px) {
+
+    .fullpage-header {
+        background: #676767 url(https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-cover.jpg) no-repeat 80% 40%;
+    }
+
+    .headline {
+        font-size: 10rem
+    }
+
 }
