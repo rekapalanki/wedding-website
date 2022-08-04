@@ -1,286 +1,312 @@
 /* ===== GENERAL STYLES ===== */
 
 * {
-    box-sizing: border-box;
-    overflow-wrap: break-word; /* Forcing long lines to break */
-    word-wrap: break-word;
-    word-break: break-word;
+  box-sizing: border-box;
+  overflow-wrap: break-word; /* Forcing long lines to break */
+  word-wrap: break-word;
+  word-break: break-word;
 }
 
 html {
-    min-height: 100%;
-    position: relative;
+  min-height: 100%;
+  position: relative;
 }
 
 body {
-    margin-bottom: 120px; /* Equals the height of the footer +30px so the content doesnt flow below it */
-    line-height: 1.5;
-    font-family: Mulish, Calibri;
-    font-size: 1.125rem;
-    text-align: center;
-    color: #444349;
+  margin-bottom: 120px; /* Equals the height of the footer +30px so the content doesnt flow below it */
+  line-height: 1.5;
+  font-family: Mulish, Calibri;
+  font-size: 1.125rem;
+  text-align: center;
+  color: #444349;
 }
 
-html, body, header, main { /* Prevent content to flow out of the viewport */
-    overflow-x: hidden;
-    max-width: 100vw;
+html,
+body,
+header,
+main {
+  /* Prevent content to flow out of the viewport */
+  overflow-x: hidden;
+  max-width: 100vw;
 }
 
 .gradient-text {
-    background-color: #d2ba87;
-    background-image: linear-gradient(to right, hsla(100,0%,0%,.3), hsla(0,100%,100%,.4), hsla(100,0%,0%,.3));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  background-color: #d2ba87;
+  background-image: linear-gradient(
+    to right,
+    hsla(100, 0%, 0%, 0.3),
+    hsla(0, 100%, 100%, 0.4),
+    hsla(100, 0%, 0%, 0.3)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /* ===== HEADER STYLES ===== */
 
 .fullpage-header {
-    width: 100vw;
-    height: 100vh;
-    background-image: linear-gradient(black, black), url(./public/everton-vila-Ah_5-iQCCSw-unsplash_medium.jpg);
-    background-repeat: no-repeat;
-    background-position: 50% 100%;
-    background-blend-mode: saturation;
-    background-size: cover;
-    display: table;
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(black, black),
+    url(./public/everton-vila-Ah_5-iQCCSw-unsplash_medium.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+  background-blend-mode: saturation;
+  background-size: cover;
+  display: table;
 }
 
 .wrapper {
-    display: table-cell;
-    vertical-align: middle;
-    transform: translate(0, 20%);
+  display: table-cell;
+  vertical-align: middle;
+  transform: translate(0, 20%);
 }
 
 #header-background {
-    background-color: hsla(100,0%,0%,.6);
+  background-color: hsla(100, 0%, 0%, 0.6);
 }
 
 /* Headline Styles */
 
 .headline {
-    color: #d2ba87;
-    font-family: "Great Vibes", "Libre Baskerville", Calibri;
-    font-size: 4rem;
-    font-weight: bold;
-    line-height: 1;
-    padding-top: 2rem;
+  color: #d2ba87;
+  font-family: "Great Vibes", "Libre Baskerville", Calibri;
+  font-size: 4rem;
+  font-weight: bold;
+  line-height: 1;
+  padding-top: 2rem;
 }
 
 /* Tagline Styles */
 
-.tagline, .tag, .time-and-date {
-    display: block;
-    padding: 0.5rem 0;
-    color: #fff;
+.tagline,
+.tag,
+.time-and-date {
+  display: block;
+  padding: 0.5rem 0;
+  color: #fff;
 }
 
 .tagline {
-    width: 90vw;
-    margin: 0 auto;
+  width: 90vw;
+  margin: 0 auto;
 }
 
 .tag {
-    margin: 0% 5%;
-    border-top: 0.05rem solid rgb(150,150,150);
-    border-bottom: 0.05rem solid rgb(150,150,150);
-    font-size: 1.25rem;
-    letter-spacing: 1px;
+  margin: 0% 5%;
+  border-top: 0.05rem solid rgb(150, 150, 150);
+  border-bottom: 0.05rem solid rgb(150, 150, 150);
+  font-size: 1.25rem;
+  letter-spacing: 1px;
 }
 
 .time-and-date {
-    font-size: 1.125rem;
+  font-size: 1.125rem;
 }
 
 /* ===== MAIN CONTENT STYLES ===== */
 
 main {
-    background: url(./public/wedding-landing-background.png) repeat;
+  background: url(./public/wedding-landing-background.png) repeat;
 }
 
 section {
-    padding-top: 1rem;
-    padding-bottom: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
 }
 
 .golden {
-    background-color: hsla(100,0%,0%,.6);
-    color: #d2ba87;
+  background-color: hsla(100, 0%, 0%, 0.6);
+  color: #d2ba87;
 }
 
 .locations-line {
-    width: 25vw;
-    border: 2px solid #444349;
+  width: 25vw;
+  border: 2px solid #444349;
 }
 
 h2 {
-    margin-top: 2rem;
-    font-family: "Great Vibes", Calibri;
-    font-size: 2.75rem;
-    font-weight: bold;
+  margin-top: 2rem;
+  font-family: "Great Vibes", Calibri;
+  font-size: 2.75rem;
+  font-weight: bold;
 }
 
 h3 {
-    font-family: "Libre Baskerville";
-    font-size: 1.5rem;
-    font-weight: bold;
+  font-family: "Libre Baskerville";
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
-p, ul {
-    font-size: 1.25rem;
+p,
+ul {
+  font-size: 1.25rem;
 }
 
 .articleTagline {
-    font-style: italic;
+  font-style: italic;
 }
 
 .times {
-    margin-left: 1rem;
-    margin-right: 1rem;
-    width: 400px;
-    text-align: left;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  width: 400px;
+  text-align: left;
 }
 
-.question, .answer {
-    text-align: left;
-    margin-left: 1rem;
+.question,
+.answer {
+  text-align: left;
+  margin-left: 1rem;
 }
 
 .question {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .qa-line {
-    width: 50vw;
-    border: 2px solid #d2ba87;
+  width: 50vw;
+  border: 2px solid #d2ba87;
 }
 
 .contacts {
-    font-family: "Libre Baskerville", Calibri;
+  font-family: "Libre Baskerville", Calibri;
 }
 
 /* Vertical Rhythm */
 
-h2,h3,h4,h5,h6,hgroup,
-ul,ol,dd,
-p,figure,
-pre,table,fieldset,hr,img {
-    margin-bottom: 2rem;
+h2,
+h3,
+h4,
+h5,
+h6,
+hgroup,
+ul,
+ol,
+dd,
+p,
+figure,
+pre,
+table,
+fieldset,
+hr,
+img {
+  margin-bottom: 2rem;
 }
 
 .question {
-    margin-bottom: 0.5rem; /* Correction for Q&A section */
+  margin-bottom: 0.5rem; /* Correction for Q&A section */
 }
 
 /* Media styles */
 
 img {
-    max-width: 150px;
+  max-width: 150px;
 }
 
 /* ===== FOOTER STYLES ===== */
 
 footer {
-    overflow: hidden;
-    position: absolute; 
-    bottom: 0;
-    height: 120px;
-    width: 100%;
-    padding: 1.7rem 0;
-    text-align: center;
-    background-color: #606060;
-    color: #fff;
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+  height: 120px;
+  width: 100%;
+  padding: 1.7rem 0;
+  text-align: center;
+  background-color: #606060;
+  color: #fff;
 }
 
 #copyright {
-    margin: 0 2%;
-    padding-bottom: 0.9rem;
+  margin: 0 2%;
+  padding-bottom: 0.9rem;
 }
 
 a {
-    text-decoration: none;
-    color: #bd806e;
+  text-decoration: none;
+  color: #bd806e;
 }
 
 a:hover {
-    color: #eda087;
-    transition: color .5s ease-in-out;
+  color: #eda087;
+  transition: color 0.5s ease-in-out;
 }
 
 strong {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 small {
-    font-size: .9rem;
+  font-size: 0.9rem;
 }
 
 @media (min-width: 768px) {
+  .fullpage-header {
+    background-image: linear-gradient(black, black),
+      url(./public/everton-vila-Ah_5-iQCCSw-unsplash_medium.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    background-blend-mode: saturation;
+  }
 
-    .fullpage-header {
-        background-image: linear-gradient(black, black), url(./public/everton-vila-Ah_5-iQCCSw-unsplash_medium.jpg);
-        background-repeat: no-repeat;
-        background-position: 50% 100%;
-        background-blend-mode: saturation;
-    }
+  .headline {
+    font-size: 8rem;
+  }
 
-    .headline {
-        font-size: 8rem
-    }
+  .tag {
+    font-size: 1.4rem;
+    letter-spacing: 3px;
+  }
 
-    .tag {
-        font-size: 1.4rem;
-        letter-spacing: 3px;
-    }
+  h2 {
+    font-size: 3.5rem;
+  }
 
-    h2 {
-        font-size: 3.5rem;
-    }
+  .locations {
+    display: inline-block;
+    padding: 0 1.5rem;
+  }
 
-    .locations {
-        display: inline-block;
-        padding: 0 1.5rem;
-    }
+  hr {
+    display: none;
+  }
 
-    hr {
-        display: none;
-    }
+  .times {
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-    .times {
-        margin-left: auto;
-        margin-right: auto;
-    }
+  .section-wrapper {
+    display: table;
+  }
 
-    .section-wrapper {
-        display: table;
-    }
+  .qa {
+    display: table-cell;
+    padding: 0 1.5rem;
+    width: 33%;
+    text-align: left;
+  }
 
-    .qa {
-        display: table-cell;
-        padding: 0 1.5rem;
-        width: 33%;
-        text-align: left;
-    }
+  .question,
+  .answer {
+    margin-left: 0;
+  }
 
-    .question, .answer {
-        margin-left: 0;
-    }
-    
-    /* CUSTOMIZED SCROLLBAR */
+  /* CUSTOMIZED SCROLLBAR */
 
-    ::-webkit-scrollbar {
-        width: 6px;
-        height: 6px;
-    }
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
 
-    ::-webkit-scrollbar-track {
-        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
-        border-radius: 5px;
-    }
-    
-    ::-webkit-scrollbar-thumb {
-        border-radius: 5px;
-        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
-    }
+  ::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+  }
 
+  ::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+  }
 }
